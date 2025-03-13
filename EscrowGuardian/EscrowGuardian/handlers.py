@@ -95,33 +95,15 @@ async def transaction(update: Update, context: CallbackContext):
         "/select_currency BTC\n"
         "/select_currency LTC"
     )
-
 async def select_currency(update: Update, context: CallbackContext):
-    """Handle currency selection"""
-    if not context.args:
-        await update.message.reply_text("Specify currency: /select_currency BTC|LTC")
-        return
-
-    currency = context.args[0].upper()
-    if currency not in SUPPORTED_CURRENCIES:
-        await update.message.reply_text(f"❌ Unsupported currency. Choose: {', '.join(SUPPORTED_CURRENCIES)}")
-        return
-
-    user_id = update.effective_user.id
-    transaction = storage.create_transaction(user_id, currency)
-    deposit_address = ESCROW_WALLETS[currency]
-
+    """Handle currency selection via buttons"""
+    keyboard = [
+        [InlineKeyboardButton("BTC", callback_data='BTC'),
+         InlineKeyboardButton("LTC", callback_data='LTC')]
+    ]
     await update.message.reply_text(
-        f"✅ Transaction Created!\n\n"
-        f"🔐 ID: `{transaction.id}`\n"
-        f"💰 Currency: {currency}\n"
-        f"📥 Deposit Address:\n`{deposit_address}`\n\n"
-        "Next Steps:\n"
-        "1. /set_buyer [address]\n"
-        "2. /set_seller [address]\n"
-        "3. Send funds to escrow address",
-        parse_mode=ParseMode.MARKDOWN
-    )
+        "Select cryptocurrency:",
+        reply_markup=InlineKeyboardMarkup(keyboard)
 
 async def set_buyer(update: Update, context: CallbackContext):
     """Set buyer address"""
@@ -401,30 +383,29 @@ async def button_callback(update: Update, context: CallbackContext):
     await query.answer()
     
     try:
-        if query.data == 'show_escrow_info':
-            escrow_info = (
-                "🛡️ How Escrow Works:\n\n"
-                "1. Buyer/seller agree to terms\n"
-                "2. Funds are locked in escrow\n"
-                "3. Goods/services are exchanged\n"
-                "4. Funds released to seller\n\n"
-                "Full guide: /how"
-            )
-            await query.edit_message_text(escrow_info)
-            
-        elif query.data == 'show_terms':
-            # Pass the original message to context
-            context.user_data['original_message'] = query.message
-            await terms(update, context)
-            if query.message:
-                await query.message.delete()
-            
-        elif query.data == 'start_transaction':
-            # Pass the original message to context
-            context.user_data['original_message'] = query.message
-            await transaction(update, context)
-            if query.message:
-                await query.message.delete()
+        if query.data.startswith('currency_'):
+    currency = query.data.split('_')[1].upper()
+    user_id = query.from_user.id
+    transaction = storage.create_transaction(user_id, currency)
+    deposit_address = ESCROW_WALLETS[currency]
+    
+    await query.message.reply_text(
+        f"✅ Transaction Created!\n\n"
+        f"🔐 ID: `{transaction.id}`\n"
+        f"💰 Currency: {currency}\n"
+        f"📥 Deposit Address:\n`{deposit_address}`\n\n"
+        "Next Steps:\n"
+        "1. /set_buyer [crypto_address]\n"
+        "2. /set_seller [crypto_address]\n"
+        "3. Send funds to escrow address",
+        parse_mode=ParseMode.MARKDOWN
+    )
+elif query.data == 'show_escrow_info':
+    ...
+elif query.data == 'show_terms':
+    ...
+elif query.data == 'start_transaction':
+    ...
             
     except Exception as e:
         logger.error(f"Button callback failed: {str(e)}", exc_info=True)
