@@ -90,20 +90,25 @@ async def transaction(update: Update, context: CallbackContext):
         await update.message.reply_text(status_message)
         return
 
-    await update.message.reply_text(
-        "Choose currency:\n"
-        "/select_currency BTC\n"
-        "/select_currency LTC"
-    )
+# Directly trigger button-based selection
+await select_currency(update, context)
+
 async def select_currency(update: Update, context: CallbackContext):
     """Handle currency selection via buttons"""
     keyboard = [
-        [InlineKeyboardButton("BTC", callback_data='BTC'),
-         InlineKeyboardButton("LTC", callback_data='LTC')]
+        [InlineKeyboardButton("BTC", callback_data='currency_btc'),
+         InlineKeyboardButton("LTC", callback_data='currency_ltc')]
+    ]
+   async def select_currency(update: Update, context: CallbackContext):
+    """Handle currency selection via buttons"""
+    keyboard = [
+        [InlineKeyboardButton("BTC", callback_data='currency_btc'),  # Fixed callback_data
+         InlineKeyboardButton("LTC", callback_data='currency_ltc')]
     ]
     await update.message.reply_text(
         "Select cryptocurrency:",
-        reply_markup=InlineKeyboardMarkup(keyboard)
+        reply_markup=InlineKeyboardMarkup(keyboard)  # Added closing )
+    )
 
 async def set_buyer(update: Update, context: CallbackContext):
     """Set buyer address"""
@@ -383,7 +388,7 @@ async def button_callback(update: Update, context: CallbackContext):
     await query.answer()
     
     try:
-        if query.data.startswith('currency_'):
+      if query.data.startswith('currency_'):
     currency = query.data.split('_')[1].upper()
     user_id = query.from_user.id
     transaction = storage.create_transaction(user_id, currency)
@@ -401,15 +406,25 @@ async def button_callback(update: Update, context: CallbackContext):
         parse_mode=ParseMode.MARKDOWN
     )
 elif query.data == 'show_escrow_info':
-    ...
+    escrow_info = (
+        "🛡️ How Escrow Works:\n\n"
+        "1. Buyer/seller agree to terms\n"
+        "2. Funds are locked in escrow\n"
+        "3. Goods/services are exchanged\n"
+        "4. Funds released to seller\n\n"
+        "Full guide: /how"
+    )
+    await query.edit_message_text(escrow_info)
 elif query.data == 'show_terms':
-    ...
+    context.user_data['original_message'] = query.message
+    await terms(update, context)
+    if query.message:
+        await query.message.delete()
 elif query.data == 'start_transaction':
-    ...
-            
-    except Exception as e:
-        logger.error(f"Button callback failed: {str(e)}", exc_info=True)
-        await query.edit_message_text("⚠️ Action failed. Please try again.")
+    context.user_data['original_message'] = query.message
+    await transaction(update, context)
+    if query.message:
+        await query.message.delete()
 
 # ======================== SYSTEM COMMANDS ========================
 
