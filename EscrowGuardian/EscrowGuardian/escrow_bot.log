@@ -1,0 +1,439 @@
+2025-03-13 17:41:53,412 - bot - INFO - Starting bot initialization...
+2025-03-13 17:41:53,413 - bot - ERROR - Error during bot operation: Updater.__init__() missing 1 required positional argument: 'update_queue'
+2025-03-13 17:41:54,290 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.248:5000
+2025-03-13 17:41:54,291 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-13 17:44:18,265 - bot - INFO - Starting bot initialization...
+2025-03-13 17:44:18,266 - bot - ERROR - Error during bot operation: Updater.__init__() missing 1 required positional argument: 'update_queue'
+2025-03-13 17:44:19,112 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.248:5000
+2025-03-13 17:44:19,112 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-13 17:54:03,783 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.248:5000
+2025-03-13 17:54:03,784 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-13 18:03:27,997 - bot - INFO - Starting bot polling...
+2025-03-13 18:03:28,122 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getMe "HTTP/1.1 200 OK"
+2025-03-13 18:03:28,122 - bot - ERROR - Profile photo file not found
+2025-03-13 18:03:28,164 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/setMyName "HTTP/1.1 429 Too Many Requests"
+2025-03-13 18:03:28,164 - bot - ERROR - Failed to set bot name: Flood control exceeded. Retry in 18852 seconds
+2025-03-13 18:03:28,199 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/setMyCommands "HTTP/1.1 200 OK"
+2025-03-13 18:03:28,200 - bot - INFO - Bot commands and profile setup completed
+2025-03-13 18:03:28,214 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/deleteWebhook "HTTP/1.1 200 OK"
+2025-03-13 18:03:28,215 - telegram.ext.Application - INFO - Application started
+2025-03-13 18:03:28,262 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:03:28,263 - handlers - INFO - Start command received from user 6230591454
+2025-03-13 18:03:28,290 - bot - ERROR - Exception while handling an update:
+Traceback (most recent call last):
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_application.py", line 1343, in process_update
+    await coroutine
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object NoneType can't be used in 'await' expression
+2025-03-13 18:03:28,332 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/sendMessage "HTTP/1.1 200 OK"
+2025-03-13 18:03:28,332 - handlers - INFO - Start command received from user 6230591454
+2025-03-13 18:03:28,333 - bot - ERROR - Exception while handling an update:
+Traceback (most recent call last):
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_application.py", line 1343, in process_update
+    await coroutine
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object NoneType can't be used in 'await' expression
+2025-03-13 18:03:28,373 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.248:5000
+2025-03-13 18:03:28,373 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-13 18:03:28,384 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/sendMessage "HTTP/1.1 200 OK"
+2025-03-13 18:03:28,385 - handlers - INFO - Start command received from user 1281938416
+2025-03-13 18:03:28,385 - bot - ERROR - Exception while handling an update:
+Traceback (most recent call last):
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_application.py", line 1343, in process_update
+    await coroutine
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object NoneType can't be used in 'await' expression
+2025-03-13 18:03:28,475 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/sendMessage "HTTP/1.1 200 OK"
+2025-03-13 18:03:38,307 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:03:49,803 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:03:59,818 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:04:09,833 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:04:19,851 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:04:29,866 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:04:39,883 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:04:49,900 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:04:59,918 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:05:09,933 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:05:19,953 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:05:29,968 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:05:39,985 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:05:50,000 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:06:00,016 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:06:10,031 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:06:20,048 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:06:30,064 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:06:33,720 - bot - INFO - Starting bot polling...
+2025-03-13 18:06:33,845 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getMe "HTTP/1.1 200 OK"
+2025-03-13 18:06:33,846 - bot - ERROR - Failed to set profile photo: 'ExtBot' object has no attribute 'set_my_photo'
+2025-03-13 18:06:33,919 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/setMyName "HTTP/1.1 429 Too Many Requests"
+2025-03-13 18:06:33,920 - bot - WARNING - Attempt 1 failed: Flood control exceeded. Retry in 18666 seconds
+2025-03-13 18:06:34,063 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.248:5000
+2025-03-13 18:06:34,063 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-13 18:06:40,079 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:06:43,474 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:06:43,475 - handlers - INFO - Start command received from user 1281938416
+2025-03-13 18:06:43,476 - bot - ERROR - Exception while handling an update:
+Traceback (most recent call last):
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_application.py", line 1343, in process_update
+    await coroutine
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object NoneType can't be used in 'await' expression
+2025-03-13 18:06:43,632 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/sendMessage "HTTP/1.1 200 OK"
+2025-03-13 18:06:44,061 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/setMyName "HTTP/1.1 429 Too Many Requests"
+2025-03-13 18:06:44,062 - bot - WARNING - Attempt 2 failed: Flood control exceeded. Retry in 18656 seconds
+2025-03-13 18:06:53,494 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:06:54,149 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/setMyName "HTTP/1.1 429 Too Many Requests"
+2025-03-13 18:06:54,833 - bot - WARNING - Attempt 3 failed: Flood control exceeded. Retry in 18646 seconds
+2025-03-13 18:07:03,509 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:07:13,527 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:07:23,544 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:07:33,559 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:07:43,577 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:07:53,593 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:08:03,610 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:08:13,627 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:08:23,644 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:08:33,659 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:08:43,676 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:08:53,691 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:09:03,707 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:09:13,721 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:09:23,739 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:09:33,756 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:09:43,772 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:09:53,786 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:10:03,802 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:10:13,819 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:10:23,833 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:10:33,851 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:10:43,865 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:10:53,883 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:11:03,898 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:11:13,913 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:11:23,928 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:11:33,945 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:11:43,961 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:11:53,977 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:12:03,993 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:12:14,199 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:12:24,514 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:12:34,531 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:12:44,547 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:12:54,849 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:13:05,120 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:13:15,186 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:13:25,256 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:13:35,317 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:13:45,372 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:13:55,468 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:14:05,528 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:14:15,634 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:14:25,679 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:14:35,700 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:14:45,716 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:14:55,739 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:15:05,753 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:15:08,352 - __main__ - INFO - Starting bot polling...
+2025-03-13 18:15:08,489 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getMe "HTTP/1.1 200 OK"
+2025-03-13 18:15:08,490 - __main__ - ERROR - Failed to set profile photo: 'ExtBot' object has no attribute 'set_my_profile_photo'
+2025-03-13 18:15:08,556 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/setMyCommands "HTTP/1.1 200 OK"
+2025-03-13 18:15:08,556 - __main__ - INFO - Bot commands and profile setup completed
+2025-03-13 18:15:08,571 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/deleteWebhook "HTTP/1.1 200 OK"
+2025-03-13 18:15:08,571 - telegram.ext.Application - INFO - Application started
+2025-03-13 18:15:08,622 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 409 Conflict"
+2025-03-13 18:15:08,622 - bot - ERROR - Exception while handling an update:
+Traceback (most recent call last):
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 115, in network_retry_loop
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 108, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_updater.py", line 376, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 658, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_bot.py", line 4605, in get_updates
+    await self._post(
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_bot.py", line 691, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 362, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_bot.py", line 720, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-13 18:15:12,641 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 409 Conflict"
+2025-03-13 18:15:12,642 - __main__ - ERROR - Exception while handling an update:
+Traceback (most recent call last):
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 115, in network_retry_loop
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 108, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_updater.py", line 376, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 658, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_bot.py", line 4605, in get_updates
+    await self._post(
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_bot.py", line 691, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 362, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_bot.py", line 720, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-13 18:15:13,656 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 409 Conflict"
+2025-03-13 18:15:13,656 - bot - ERROR - Exception while handling an update:
+Traceback (most recent call last):
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 115, in network_retry_loop
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 108, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_updater.py", line 376, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 658, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_bot.py", line 4605, in get_updates
+    await self._post(
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_bot.py", line 691, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 362, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_bot.py", line 720, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-13 18:15:18,185 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 409 Conflict"
+2025-03-13 18:15:20,398 - __main__ - ERROR - Exception while handling an update:
+Traceback (most recent call last):
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 115, in network_retry_loop
+    if not await do_action():
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 108, in do_action
+    return action_cb_task.result()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_updater.py", line 376, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 658, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_bot.py", line 4605, in get_updates
+    await self._post(
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_bot.py", line 691, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 362, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_bot.py", line 720, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2025-03-13 18:15:21,939 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:15:21,940 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-03-13 18:15:21,940 - telegram.ext.Application - INFO - Application.stop() complete
+2025-03-13 18:15:25,185 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:15:36,013 - __main__ - INFO - Starting bot polling...
+2025-03-13 18:15:36,094 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getMe "HTTP/1.1 200 OK"
+2025-03-13 18:15:36,095 - __main__ - ERROR - Failed to set profile photo: 'ExtBot' object has no attribute 'set_my_profile_photo'
+2025-03-13 18:15:36,120 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/setMyCommands "HTTP/1.1 200 OK"
+2025-03-13 18:15:36,121 - __main__ - INFO - Bot commands and profile setup completed
+2025-03-13 18:15:36,136 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/deleteWebhook "HTTP/1.1 200 OK"
+2025-03-13 18:15:36,136 - telegram.ext.Application - INFO - Application started
+2025-03-13 18:15:46,184 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:15:56,199 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:16:04,497 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:16:04,498 - handlers - INFO - Start command received from user 1281938416
+2025-03-13 18:16:04,513 - __main__ - ERROR - Exception while handling an update:
+Traceback (most recent call last):
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_application.py", line 1343, in process_update
+    await coroutine
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object NoneType can't be used in 'await' expression
+2025-03-13 18:16:04,600 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/sendMessage "HTTP/1.1 200 OK"
+2025-03-13 18:16:14,530 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:16:24,548 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:24:36,977 - bot - INFO - Starting bot polling...
+2025-03-13 18:24:37,104 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getMe "HTTP/1.1 200 OK"
+2025-03-13 18:24:37,141 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/setMyCommands "HTTP/1.1 200 OK"
+2025-03-13 18:24:37,142 - bot - ERROR - Failed to set profile photo: 'ExtBot' object has no attribute 'set_my_photo'
+2025-03-13 18:24:37,142 - bot - INFO - Bot initialization completed
+2025-03-13 18:24:37,157 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/deleteWebhook "HTTP/1.1 200 OK"
+2025-03-13 18:24:37,158 - telegram.ext.Application - INFO - Application started
+2025-03-13 18:24:37,610 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.248:5000
+2025-03-13 18:24:37,610 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-13 18:24:47,221 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:24:57,236 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:25:07,259 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:25:08,199 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:25:08,200 - handlers - INFO - Start command received from user 1281938416
+2025-03-13 18:25:08,286 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/sendMessage "HTTP/1.1 200 OK"
+2025-03-13 18:25:12,242 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:25:12,270 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-03-13 18:25:12,270 - handlers - ERROR - Button callback failed: 'NoneType' object has no attribute 'reply_text'
+2025-03-13 18:25:12,312 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/editMessageText "HTTP/1.1 200 OK"
+2025-03-13 18:25:19,540 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:25:19,541 - handlers - INFO - Start command received from user 1281938416
+2025-03-13 18:25:19,640 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/sendMessage "HTTP/1.1 200 OK"
+2025-03-13 18:25:21,406 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:25:21,443 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-03-13 18:25:21,483 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/editMessageText "HTTP/1.1 200 OK"
+2025-03-13 18:25:26,867 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:25:26,935 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/sendMessage "HTTP/1.1 400 Bad Request"
+2025-03-13 18:25:26,935 - bot - ERROR - Exception while handling update:
+Traceback (most recent call last):
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_application.py", line 1343, in process_update
+    await coroutine
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\Documents\escrow bot\EscrowGuardian\handlers.py", line 350, in how
+    await update.message.reply_text(guide, parse_mode=ParseMode.MARKDOWN)
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_message.py", line 1794, in reply_text
+    return await self.get_bot().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 2977, in send_message
+    return await super().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_bot.py", line 1091, in send_message
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 618, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_bot.py", line 803, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_bot.py", line 691, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\ext\_extbot.py", line 362, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\_bot.py", line 720, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alex\AppData\Local\Programs\Python\Python312\Lib\site-packages\telegram\request\_baserequest.py", line 383, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Can't parse entities: can't find end of the entity starting at byte offset 257
+2025-03-13 18:25:26,994 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/sendMessage "HTTP/1.1 200 OK"
+2025-03-13 18:25:30,875 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:25:30,929 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/sendMessage "HTTP/1.1 200 OK"
+2025-03-13 18:25:35,108 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:25:35,109 - handlers - INFO - Start command received from user 1281938416
+2025-03-13 18:25:35,164 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/sendMessage "HTTP/1.1 200 OK"
+2025-03-13 18:25:36,741 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:25:36,820 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-03-13 18:25:36,820 - handlers - ERROR - Button callback failed: 'NoneType' object has no attribute 'reply_text'
+2025-03-13 18:25:36,900 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/editMessageText "HTTP/1.1 200 OK"
+2025-03-13 18:25:46,759 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:25:59,317 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:26:09,343 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:26:19,362 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:26:29,379 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:26:39,396 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:26:49,417 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:26:59,433 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:27:09,451 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:27:19,503 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:27:29,520 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:27:39,540 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:27:49,560 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:27:59,577 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:36:30,952 - bot - INFO - Starting bot polling...
+2025-03-13 18:36:31,053 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getMe "HTTP/1.1 200 OK"
+2025-03-13 18:36:31,082 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/setMyCommands "HTTP/1.1 200 OK"
+2025-03-13 18:36:31,083 - bot - ERROR - Failed to set profile photo: 'ExtBot' object has no attribute 'set_my_photo'
+2025-03-13 18:36:31,083 - bot - INFO - Bot initialization completed
+2025-03-13 18:36:31,098 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/deleteWebhook "HTTP/1.1 200 OK"
+2025-03-13 18:36:31,099 - telegram.ext.Application - INFO - Application started
+2025-03-13 18:36:31,149 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:36:31,150 - handlers - INFO - Start command received from user 6230591454
+2025-03-13 18:36:31,196 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/sendMessage "HTTP/1.1 200 OK"
+2025-03-13 18:36:31,322 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.248:5000
+2025-03-13 18:36:31,322 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-13 18:36:32,366 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:36:32,446 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/sendMessage "HTTP/1.1 200 OK"
+2025-03-13 18:36:42,387 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:36:46,865 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:36:46,983 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/sendMessage "HTTP/1.1 200 OK"
+2025-03-13 18:36:49,146 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:36:49,208 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/sendMessage "HTTP/1.1 200 OK"
+2025-03-13 18:36:53,081 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:36:53,266 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/sendMessage "HTTP/1.1 200 OK"
+2025-03-13 18:37:03,102 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:37:13,120 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
+2025-03-13 18:37:23,138 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7368183600:AAGU8yjK-ZDqip5dbjUiuG6YkQ-NeFGA4A8/getUpdates "HTTP/1.1 200 OK"
