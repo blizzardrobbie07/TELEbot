@@ -26,22 +26,22 @@ logger = logging.getLogger(__name__)
 # Define bot commands for menu
 BOT_COMMANDS = [
     ("start", "Start the bot and receive a welcome menu"),
-    ("transaction", "Initiate or view transaction"),
-    ("set_buyer", "Set buyer's wallet address"),
-    ("set_seller", "Set seller's wallet address"),
-    ("status", "View transaction status"),
-    ("balance", "Check balance"),
-    ("refund_buyer", "Process buyer refund"),
-    ("pay_seller", "Complete seller payment"),
-    ("review", "Leave transaction review"),
-    ("restart", "Reset transaction"),
-    ("verify", "Verify escrow address"),
-    ("report", "Report issues"),
-    ("contact", "Contact support"),
+    ("transaction", "Initiate or view transaction status"),
+    ("set_buyer", "[crypto_address] Set buyer's wallet address"),
+    ("set_seller", "[crypto_address] Set seller's wallet address"),
+    ("status", "View transaction details and status"),
+    ("balance", "Check your current balance"),
+    ("refund_buyer", "Process refund to buyer"),
+    ("pay_seller", "Complete payment to seller"),
+    ("review", "[message] Leave transaction review"),
+    ("restart", "Restart transaction to start anew"),
+    ("verify", "[crypto_address] Verify escrow address legitimacy"),
+    ("report", "[message] Report suspicious activities"),
+    ("contact", "[message] Contact administrators"),
     ("real", "Verify bot authenticity"),
-    ("check", "Check admin privileges"),
-    ("terms", "View terms of service"),
-    ("how", "Usage guide")
+    ("check", "Check administrative privileges"),
+    ("terms", "View Terms of Service"),
+    ("how", "Learn how to use the bot")
 ]
 
 async def error_handler(update: object, context: ContextTypes.DEFAULT_TYPE):
